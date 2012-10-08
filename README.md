@@ -29,7 +29,7 @@ Override a property in `obj`. Adding property if it does not exist
 * `callback(Error, Config)` passing Config if success 
 
 ### ini2jsonSync(filename)
-Async version of ini2json
+Sync version of ini2json
 * `filename`
 * Return Config
 
