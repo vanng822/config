@@ -1,0 +1,13 @@
+{
+  "name"          : "config",
+  "description"   : "Config class for json configuration files. Support simple structure of ini configuration.",
+  "keywords"      : ["override", "config", "json2ini", "ini2json"],
+  "author"        : "Nguyen Van Nhu",
+  "contributors"  : [],
+  "dependencies"  : [],
+  "devDependencies": ["vows"],
+  "lib"           : "lib",
+  "main"          : "./lib/config.js",
+  "repository"    : {"type": "git", "url": "git://github.com/vanng822/config.git"},
+  "version"       : "0.1.0"
+}
