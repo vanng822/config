@@ -1,5 +1,5 @@
 ## config
-Load, create, merge configuration files in json format. Can read simple ini format file and convert it to json.
+Load, create, merge configuration files in json format. Can read simple ini format file and convert it to object.
 
 ## Usage example
 	var Config = require('config').Config;
@@ -31,14 +31,14 @@ Override a property in `obj`. Adding property if it does not exist
 ### ini2jsonSync(filename)
 Sync version of ini2json
 * `filename`
-* Return Config
+* `Return` Config
 
 ### json2ini(obj)
 Create a string in ini-format of the given obj
 * `obj` object to create ini-formatted string
-* Return ini-formatted string
+* `Return` ini-formatted string
 
 ### scandir(path)
 Scan entire directory for configuration files with extension .js
 * `path` path of the directory to scan for configurations
-* Return Config
+* `Return` Config
