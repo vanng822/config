@@ -8,13 +8,13 @@ Load, create, merge configuration files in json format. Can read simple ini form
 	console.log(c.port);
 	
 
-## class
+## Classes
 ### Config(files, path)
 * `files` array of configuration filenames
 * `path` path to files given above
  
 
-## methods
+## Functions
 ### overrideObject(obj, source1, source2, ...)
 Override `obj` with properties in source1, source2 and so on
 
