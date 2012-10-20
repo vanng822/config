@@ -1,5 +1,5 @@
 {
-  "name"          : "config",
+  "name"          : "vnfconfig",
   "description"   : "Config class for json configuration files. Support simple structure of ini configuration.",
   "keywords"      : ["override", "config", "json2ini", "ini2json"],
   "author"        : "Nguyen Van Nhu",

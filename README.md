@@ -2,7 +2,7 @@
 Load and merge configuration files in js (need to export using module.exports). Can read simple ini format file and convert it to object.
 
 ## Usage example
-	var Config = require('config').Config;
+	var Config = require('vnfconfig').Config;
 	var c = new Config(['all.js', 'production.js'], __dirname + '/config');
 	console.log(c.host); // output 127.0.0.1
 	console.log(c.port); // output 8000
