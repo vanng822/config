@@ -9,5 +9,8 @@
   "lib"           : "lib",
   "main"          : "./lib/config.js",
   "repository"    : {"type": "git", "url": "git://github.com/vanng822/config.git"},
+  "scripts": {
+    "test": "vows --spec tests/index.js"
+  },
   "version"       : "0.1.0"
 }
