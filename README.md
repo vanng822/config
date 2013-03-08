@@ -1,6 +1,9 @@
 ## config
 Load and merge configuration files in js (need to export using module.exports). Can read simple ini format file and convert it to object.
 
+[![build status](https://secure.travis-ci.org/vanng822/config.png)](http://travis-ci.org/vanng822/config)
+
+
 ## Usage example
 	var Config = require('vnfconfig').Config;
 	var c = new Config(['all.js', 'production.js'], __dirname + '/config');

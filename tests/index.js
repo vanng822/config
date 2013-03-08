@@ -109,13 +109,61 @@ vows.describe('Configuration test suite').addBatch({
 		}), "test.0=10\ntest.1=20\ntest.2=40\ntest.3=80\ntest.4=160\ntest2.0=testing\ntest2.1=test");
 	}
 }).addBatch({
-	'scandir' : function() {
+	'scandirBoth' : function() {
 		var c = config.scandir(__dirname + '/data');
+		assert.deepEqual(c, {
+			db : {
+				host : 'localhost',
+				port : '3069'
+			},
+			http : {
+				host : '127.0.0.1',
+				port : '3000'
+			},
+			host : '127.0.0.1',
+			cssMaxAge : 31557600000,
+			jsMaxAge : 31557600000,
+			translation : {
+				NEXT : 'next',
+				NEWLINE : 'test\ntesting'
+			},
+			extra : {
+				ini : {
+					file : 'true'
+				}
+			},
+			port : 8000
+		});
+	},
+	'scandirIni' : function() {
+		var c = config.scandir(__dirname + '/data', 'ini');
+		assert.deepEqual(c, {
+			db : {
+				host : 'localhost',
+				port : '3069'
+			},
+			http : {
+				host : '127.0.0.1',
+				port : '3000'
+			},
+			translation : {
+				NEXT : 'next',
+				NEWLINE : 'test\ntesting'
+			},
+			extra : {
+				ini : {
+					file : 'true'
+				}
+			}
+		});
+	},
+	'scandirJs' : function() {
+		var c = config.scandir(__dirname + '/data', 'js');
 		assert.deepEqual(c, {
 			host : '127.0.0.1',
 			cssMaxAge : 31557600000,
 			jsMaxAge : 31557600000,
 			port : 8000
 		});
-	}
+	},
 }).export(module);
